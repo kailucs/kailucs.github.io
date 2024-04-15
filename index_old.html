@@ -236,7 +236,7 @@
           </div>
         </div>
 
-        <div class="list-item publication" data-category="publication" style="margin-bottom: 0px;">
+        <div class="list-item publication" data-category="publication" style="margin-bottom: -20px;">
           <a href="https://kl-research.github.io/RobotGrasping" class="thumbnail">
             <img src="images/iros_19_demo2.png" alt="" />
           </a>
@@ -371,10 +371,8 @@
 
       </div>
 
-      <div id="footer">  
-        <br>
-        Feel free to use this website's source code. Inspired by <a href="https://andyzeng.github.io/">Andy's website</a>.
-        </div>
+      <div id="footer">Feel free to download this website's <a href="https://github.com/andyzeng/andyzeng.github.io">template</a>, just add a link back to my website. Inspired by <a href="https://jonbarron.info/">Jon's website</a>.</div>
+
     </div>
 
     <script>
@@ -418,7 +416,7 @@
         // Retrieve cached button click.
         var defaultFilterValue = localStorage.getItem('filterValue');
         if (defaultFilterValue == null) {
-          defaultFilterValue = ".publication"
+          defaultFilterValue = ".highlight"
         }
         $grid.isotope({ filter: defaultFilterValue });
         var buttons = document.getElementsByClassName("button");
@@ -430,6 +428,7 @@
           }
         }
       }
+
       function toggle_bio() {
         var x = document.getElementById("more-bio");
         if (x.style.display === "none") {
